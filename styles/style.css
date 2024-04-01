@@ -1,1 +1,9 @@
-/* место для вашего кода */
+/*---Оформление шапки---*/
+.header {
+    display: grid;
+    margin-top: 92px;
+    margin-left: 25px;
+    margin-right: 25px;
+    border: 1px solid;
+    height: 104px;
+}
