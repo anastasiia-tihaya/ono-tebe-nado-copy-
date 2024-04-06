@@ -286,9 +286,10 @@ p {
     height: 100%;
 }
 .logo-column-style{
-    height: 114px; 
-    width: 148px; 
-    margin: 64px 46.48px 62px 45.52px;
+    display: block;
+    width: 148px;
+    height: 114px;
+    margin: 64px 45.52px 62px 46.48px;
 }
 .about-column {
     margin: 133px 0px 0px 8px;
