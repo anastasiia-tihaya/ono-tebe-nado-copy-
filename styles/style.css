@@ -156,7 +156,9 @@ main{
 .subline{
     margin-left: 28px;
     color: white;
+    width: 100%;
     font-size: 22px;
+    line-height: 28px;
     text-transform: uppercase;
     word-spacing: 1.2rem;
 }
