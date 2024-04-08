@@ -374,6 +374,9 @@ p {
 .footer_menu-1{
     text-decoration: none;
 }
+.nav-style-footer{
+    margin: 0px 185px; width: 149px;
+}
 .socials-container{
     display: flex;
     width: 240px;
