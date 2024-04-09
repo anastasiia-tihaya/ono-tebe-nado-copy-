@@ -21,11 +21,13 @@ ul,
 ol,
 li,
 blockquote {
+  font-family: Raleway;
   margin: 0;
   padding: 0;
 }
 
 a {
+  font-family: Raleway;
   color: inherit;
 }
 
