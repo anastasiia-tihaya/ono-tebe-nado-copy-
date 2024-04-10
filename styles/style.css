@@ -84,7 +84,7 @@ address {
 }
 
 .header_contact_info{
-    margin-left: 186px!Important;
+    margin-left: 186px;
     font-size: 18px;
     cursor: pointer;
     display: flex;
@@ -94,6 +94,10 @@ address {
     gap: 1px;
     list-style: circle;
     margin: auto;
+}
+
+.header_contact_info-no-margin{
+    margin-left: 0px;
 }
 
 .header_text-info{
@@ -354,7 +358,7 @@ main{
     bottom: 2px;
     right: 0px;
     display: flex;
-    gap: 91px;
+    gap: 90.3px;
     max-width: 693px;
     height: 449px;
     width: 100%;
@@ -395,11 +399,15 @@ main{
 }
 
 .description-letter-spasing-three{
-    letter-spacing: 3px;
+    letter-spacing: 0.4px;
+}
+
+.description-letter-spasing-four{
+    letter-spacing: 0.6px;
 }
 
 .description-letter-spasing-one-less{
-    letter-spacing: -1px;
+    letter-spacing: -0.3px;
 }
 
 /*---Стиля для подвала ---*/
