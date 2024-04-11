@@ -83,7 +83,7 @@ address {
     font-style: normal;
 }
 
-.header_contact_info{
+.contact_info{
     margin-left: 186px;
     font-size: 18px;
     cursor: pointer;
@@ -96,34 +96,34 @@ address {
     margin: auto;
 }
 
-.header_contact_info-no-margin{
+.contact_info-no-margin{
     margin-left: 0px;
 }
 
-.header_text-info{
+.text-info{
     line-height: 24.3px;
     font-size: 18px;
     position: static;
     color: black;
 }
 
-.header_text-info-border{
+.text-info-border{
     height: 24px;
     line-height:24px ;
     border-bottom: 1.5px solid black;
 }
 
-.header_text-info-phone{
+.text-info-lettering-four{
     width: 134px;
     word-spacing: 0.4px;
 }
 
-.header_text-info-email{
+.text-info-lettering-two{
     width: 130px;
     letter-spacing: 0.2px;
 }
 
-.header_text-info-adress{
+.text-info-word-spasing{
     word-spacing: 1px;
     width: 240px;
 }
@@ -431,6 +431,7 @@ main{
     width: 240px;
     list-style: none;
 }
+
 .footer_menu {
     display: flex;
     font-size: 18px;
@@ -438,26 +439,40 @@ main{
     list-style: none;
     flex-direction: column;
     gap: 0px;
+    align-items: center;
 }
-.footer_menu-1,
-.footer_menu-script{
+
+.footer_menu-text{
     text-align: center;
     line-height: normal;
     letter-spacing: 0em;
+    border-bottom: 1.5px solid black;
 } 
-.footer_menu-1{
-    text-decoration: none;
+
+.footer_menu-text-no-border{
+    border-bottom: 0px;
 }
+
+.footer_menu-text-width{
+    width: 108px;
+}
+
 .nav-style-footer{
-    margin: 0px 185px; width: 149px;
+    margin: 0px 185px; 
+    width: 149px;
 }
+
 .socials-container{
+    list-style: none;
     display: flex;
     width: 240px;
     height: 47px;
     gap: 48px;
     margin: 2px 0px 0px 0px;
 }
+
 .icons-socials{
-    height: 48px; width: 48px;
+    display: block;
+    height: 48px;
+    width: 48px;
 }
