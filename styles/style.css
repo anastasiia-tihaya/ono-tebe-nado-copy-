@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     width: 100%;
-    margin-top: 91px;
+    margin-top: 92px;
     padding: 0px 26px;
     margin-right: 0px;
     gap: 0px;
@@ -29,7 +29,6 @@
     padding: 0px;
     text-align: left;
     font-weight: 400;
-    border-bottom: 1px solid;
  }
 
 .menu-link-info {
@@ -48,14 +47,20 @@
 /*Стиль логотипа*/
 
 .header_logo {
+    background-image: url(../images/logo-black.svg);
     width: 148px;
     height: 105px;
     cursor: default;
     display: block;
+    background-repeat: no-repeat;
  }
 
 
 /*Стиль контейнера Адрессации*/
+
+.contact_info-link-decoration {
+    width: fit-content;
+ }
 
 .contact_info {
     cursor: pointer;
@@ -67,17 +72,25 @@
     font-style: normal;
  }
 
-.contact_info-text {
-    text-decoration: none;
+ .contact_info-link {
+    letter-spacing: 0.2px;
  }
 
 /*Общие стили для головы*/
 
 .menu-container,
 .contact_info-link,
-.contact_info {
+.contact_info,
+.contact_info-text {
     font-size: 18px;
     line-height: 24.3px;
+    text-decoration: none;
+ }
+
+ .menu-li-text,
+ .contact_info-link-decoration,
+ .lots-more-link {
+    border-bottom: 1.5px solid;    
  }
 
 /*Стили для контейнера (main)*/
@@ -85,7 +98,7 @@
 .main {
     display: grid;
     grid-template-rows: repeat(3, auto);
-    margin-top: 95px;
+    margin-top: 96px;
     margin-bottom: 179px;
     gap: 146px;
  }
@@ -93,27 +106,26 @@
 /*Стили Первого блока*/
 
 .cover {
-    display: block;
-    position: relative;
-    cursor: default;
-    min-height: 757px;
     background-image: url(../images/cover.jpg);
-    background-size: cover;
-    background-position: top;
- }
-
-.overlay {
-    background-color: rgb(0, 0, 0, 0.6);
-    position: absolute;
-    inset: 0;
- }
-
-.cover_section {
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 136px;
+    gap: 135px;
     padding: 165px 50px 51px;
+ }
+
+.cover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgb(0, 0, 0, 0.6);
+    inset: 0;
+ }
+
+.cover-subline-button,
+.cover_title {
     z-index: 3;
  }
 
@@ -121,7 +133,6 @@
     display: inline-flex;
     font-size: 100px;
     text-transform: uppercase;
-    color: white;
     letter-spacing: 30px;
     flex-direction: column;
     gap: 20px;
@@ -157,16 +168,14 @@
 
 .cover-subline-button {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr auto;
     gap: 78px;
-    justify-content: space-between;
     width: 100%;
-    align-items: center;
+    align-items: baseline;
  }
 
 .subline {
     text-wrap: nowrap;
-    color: white;
     font-size: 22px;
     line-height: 28px;
     text-transform: uppercase;
@@ -176,17 +185,20 @@
 
 .cover-button {
     background-color: transparent;
-    color: white;
     font-size: 22px;
     border: 1px solid white;
     width: 256px;
     height: 51px;
     line-height: 22px;
-    text-align: center;
     text-transform: uppercase;
     font-family: inherit;
  }
 
+ .subline,
+ .cover_title,
+ .cover-button {
+    color: white;
+ }
 /*---Стили для 2-го контейнера---*/
 
 .lots_conteiner {
@@ -216,6 +228,16 @@
     min-height: 563px;
  }
 
+ .link-lots-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgb(0, 0, 0, 0.6);
+    inset: 0;
+ }
+
 /*---настройка картиночек для лотов---*/
 
 .first-img{
@@ -232,49 +254,53 @@
 
 .first-img,
 .second-img,
-.third-img {
+.third-img,
+.cover {
     background-size: cover;
     background-position: top;
  }
 
 .lots-more-link {
-    text-align: center;
-    width: 193px;
+    width: fit-content;
     line-height: 24px;
-    margin-left: 39px;
-    margin-top: 2px;
-    border-bottom: 1.5px solid black;
-    background-color: transparent;
-    color: black;
+    margin-left: 40px;
     font-size: 20px;
+    text-decoration: none;
+ }
+
+ .link-lots-style {
     text-decoration: none;
  }
 
 /*---Оформление текста для лотов---*/
 
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 50px 40px 45px 40px;
+}
+
 .article-titel {
-    color: white;
     font-size: 22px;
-    line-height: 25px;
+    line-height: 120%;
     font-style: normal;
     text-decoration: underline;
-    margin: 54px 40px 0px 40px;
  }
 
 .article-text {
     font-weight: 100;
-    color: white;
     max-height: 360px;
     font-size: 20px;
-    bottom: 45px;
-    margin: 0px 40px 0px 40px;
-    line-height: 24px;
+    line-height: 120%;
  }
 
  .article-text,
  .article-titel {
     position: relative;
     z-index: 3;
+    color: white;
  }
 
  .lots_title,
@@ -339,7 +365,6 @@
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     margin: 0px 50px 88px 50px;
-    max-width: 1000px;
  }
 
 .footer_contacts {
